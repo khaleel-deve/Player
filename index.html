@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loginPage">
+        <div class="login-container">
+            <h2>Music Player Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+                <p id="loginError" style="color: red;"></p>
+            </form>
+        </div>
+    </div>
+    <div id="musicPlayerPage" style="display: none;">
+        <header>
+            <h1>Music Player</h1>
+        </header>
+        <main>
+            <div class="player">
+                <div class="song-info">
+                    <span id="songName">No song playing</span>
+                </div>
+                <audio id="audio" controls>
+                    <source id="audioSource" src="" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="controls">
+                    <button id="prev">Click on Song to Play</button>
+                </div>
+                <div class="playlist">
+                    <ul id="songList"></ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Copy Rights: @Khaleel</p>
+            <p>Email: khaleel7550@gmail.com</p>
+        </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

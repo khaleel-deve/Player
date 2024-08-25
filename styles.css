@@ -1,0 +1,166 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #f5f5dc; /* Ivory color */
+}
+
+header {
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+    color: #f5f5dc;
+}
+
+h1, h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Login Page Styles */
+#loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.login-container {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #f5f5dc;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #f5f5dc;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #222;
+    color: #f5f5dc;
+}
+
+.login-container button {
+    background-color: #444;
+    color: #f5f5dc;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container button:hover {
+    background-color: #555;
+}
+
+/* Music Player Styles */
+#musicPlayerPage {
+    display: none;
+}
+
+.player {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.song-info {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    text-align: center;
+    color: #f5f5dc;
+    font-size: 1.2em;
+    height: 50px; /* Fixed height for song name */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+audio {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #444;
+    color: #f5f5dc;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.playlist {
+    margin-top: 20px;
+}
+
+#songList {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+#songList li {
+    cursor: pointer;
+    margin: 0;
+    padding: 10px;
+    background: #444;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    color: #f5f5dc;
+}
+
+#songList li:hover {
+    background: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    color: #f5f5dc;
+}
